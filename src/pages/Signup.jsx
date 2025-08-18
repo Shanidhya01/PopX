@@ -31,7 +31,12 @@ export const Signup = () => {
   return (
     <div className="px-[24px] py-[44px] h-full flex flex-col justify-between">
       <div className="flex flex-col gap-[24px]">
-        <Heading content="Create your PopX Account" />
+        <Heading className="text-[24px] font-bold gap-[24px]" content={
+          <>
+            Create your <br /> PopX Account
+          </>
+        } />
+
         <Input
           label="Full Name"
           placeholder="Enter your Full Name"

@@ -1,7 +1,7 @@
 export const Radio = ({ values, name, label, required = true, onChange }) => {
   return (
     <div className="text-[14px] flex flex-col gap-[8px] relative">
-      <label className="absolute text-[12px] top-0 left-5 font-semibold -translate-y-1/2 bg-base px-[4px] text-primary">
+      <label className="absolute text-[12px] top-0 font-semibold -translate-y-1/2 bg-base px-[4px] text-black">
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
