@@ -22,20 +22,24 @@ export const Signup = () => {
   };
 
   const handleSubmit = () => {
-    // Save to localStorage
     localStorage.setItem("user", JSON.stringify(formData));
-    // Navigate to Account/Profile page
     navigate("/account");
   };
 
   return (
     <div className="px-[24px] py-[44px] h-full flex flex-col justify-between">
       <div className="flex flex-col gap-[24px]">
-        <Heading className="text-[24px] font-bold gap-[24px]" content={
-          <>
-            Create your <br /> PopX Account
-          </>
-        } />
+        <Heading
+          className="text-[24px] font-bold leading-[36px]"
+          content={
+            <>
+              <div>Create your</div>
+              <div className="mt-2">PopX Account</div>
+            </>
+          }
+        />
+
+
 
         <Input
           label="Full Name"
